@@ -1,16 +1,10 @@
 name: Actions
-
-on: [push]
+on: 
+  push_request:
+    branches: [main]
 
 jobs:
-  build:
-
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        go-version: [ '1.19', '1.20', '1.21.x' ]
     steps:
-
-      name: hello
-      run: echo "hello"
+      - run: echo "hello"
 
