@@ -1,7 +1,5 @@
 name: Actions
-on: 
-  push_request:
-    branches: [main]
+on: [push]
 
 jobs:
     runs-on: ubuntu-latest
