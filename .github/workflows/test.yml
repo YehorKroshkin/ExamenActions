@@ -9,6 +9,8 @@ jobs:
     strategy:
       matrix:
         go-version: [ '1.19', '1.20', '1.21.x' ]
-    name: hello
-    run: echo "hello"
+    steps:
+
+      name: hello
+      run: echo "hello"
 
